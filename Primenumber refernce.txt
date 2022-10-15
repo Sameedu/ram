@@ -1,0 +1,60 @@
+Input using range find prime numbers
+
+================
+
+var low=13
+var high=57
+
+temp_op=[]
+for (i=low; i<=high; i++){
+  count=0
+  for (j=2; j<=i-1; j++) 
+  { 
+    if ((i%j) == 0)
+      {
+        break
+      }
+    else
+      {
+      count = count+1
+    }
+
+}
+if ((count)/(i-2) == 1)
+  temp_op.push(i)
+
+}
+
+console.log(temp_op)
+
+
+
+
+
+Input using array find prime numbers
+=======================================
+
+var findprime = (a) => {
+op =[]
+for(i=0;i<a.length;i++)
+{
+for(j=2;j<a[i];j++)
+{
+var c=0
+if((a[i]%j)== 0)
+{
+break
+}
+else
+{
+c=c+1
+}
+}
+if(c>0)
+{
+op.push(a[i])
+}
+}
+console.log(op)
+}
+findprime([13,17,19,21,22])

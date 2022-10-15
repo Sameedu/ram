@@ -1,0 +1,447 @@
+Tell us about yourself?
+
+Explain about your project?
+
+So what is your technical strengths?
+
+So you have included AWS in your profile, where did that fit?
+
+
+Architecture of your project?
+
+
+IDE to check your practical skills - prorgramming skills? - 10 Programs
+HTML, CSS, JS
+
+GIT questions - Branching strategy applied, Git clone, git merge, git revert, git commit
+
+DOM, React, Node, SQL, NOSQL, state , props, params, Redux, call back promise, JWT, CORS, dotenv, Axios, Route, Router, Navigate, Link, React hooks, HOC
+
+
+
+Unix/LInux commands:
+----------------------
+
+cd - change directory
+pwd - present working dir
+ls -ltr --> list
+ls -la  --> list including hidden files    files or directory that start with . are hidden files not visible using ls -ltr
+df -kh   --> to see filesyste structure  
+du -sh ---> to see space usage of current FS
+uname -a ---> to find server name
+ifconfig -a --> to see IPs on a server
+nslookup <domainname> ---> to see get the dns record and its IP resolution.
+netstat -nr --> to see routing table
+cat /proc/meminfo  --> to see the memory assigned to a server
+cat /proc/cpuinfo  --> to see cpu details of a server
+top  ---> command to check cpu and memory usage of the server
+free -m --> command to see the memory utilisation of the server
+curl command --> to connect to a web server in linux. 
+ping IP --> ping command to see if the IP is reachable or not from your server
+traceroute IP --> to see if the IP is reachable or not
+ssh <hostname or IP> -> to connect to the unix server use ssh via putty tool. - linux
+rdp for Windows.
+
+
+Unix/Linux snapshot
+---------------------
+al10991@ALIPL3082 MINGW64 ~
+$ ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet 2:
+
+   Connection-specific DNS Suffix  . : cchs.com
+   IPv4 Address. . . . . . . . . . . : 172.23.0.142
+   Subnet Mask . . . . . . . . . . . : 255.255.252.0
+   Default Gateway . . . . . . . . . :
+
+Ethernet adapter Ethernet 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   IPv4 Address. . . . . . . . . . . : 192.168.29.134
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.29.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+al10991@ALIPL3082 MINGW64 ~
+$ uname -a
+MINGW64_NT-10.0-19043 ALIPL3082 3.3.3-341.x86_64 2022-01-17 11:45 UTC x86_64 Msys
+
+al10991@ALIPL3082 MINGW64 ~
+$ ssh <IP>
+bash: syntax error near unexpected token `newline'
+
+al10991@ALIPL3082 MINGW64 ~
+$ pwd
+/c/Users/al10991
+
+al10991@ALIPL3082 MINGW64 ~
+$ cd /c/Users/al10991/mern
+
+al10991@ALIPL3082 MINGW64 ~/mern
+$ pwd
+/c/Users/al10991/mern
+
+al10991@ALIPL3082 MINGW64 ~/mern
+$ cd test1
+
+al10991@ALIPL3082 MINGW64 ~/mern/test1
+$ ls -ltr
+total 0
+drwxr-xr-x 1 al10991 1049089 0 Oct  6 14:35 test2/
+
+al10991@ALIPL3082 MINGW64 ~/mern/test1
+$ cd ..
+
+al10991@ALIPL3082 MINGW64 ~/mern
+$ ls -ltr
+total 4
+drwxr-xr-x 1 al10991 1049089 0 Oct  6 14:35 test1/
+drwxr-xr-x 1 al10991 1049089 0 Oct  8 17:13 jspractice/
+
+al10991@ALIPL3082 MINGW64 ~/mern
+$ cd test1
+
+al10991@ALIPL3082 MINGW64 ~/mern/test1
+$ cd ..
+
+al10991@ALIPL3082 MINGW64 ~/mern
+$ cd ../..
+
+al10991@ALIPL3082 MINGW64 /c/Users
+$ cd
+
+al10991@ALIPL3082 MINGW64 ~
+$ curl http://google.com
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   219  100   219    0     0    247      0 --:--:-- --:--:-- --:--:--   248<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
+
+
+al10991@ALIPL3082 MINGW64 ~
+$ ping google.com
+
+Pinging google.com [64.233.177.139] with 32 bytes of data:
+Reply from 64.233.177.139: bytes=32 time=385ms TTL=94
+Reply from 64.233.177.139: bytes=32 time=406ms TTL=94
+Reply from 64.233.177.139: bytes=32 time=318ms TTL=94
+
+Ping statistics for 64.233.177.139:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 318ms, Maximum = 406ms, Average = 369ms
+Control-C
+
+al10991@ALIPL3082 MINGW64 ~
+
+$ nslookup google.com
+Non-authoritative answer:
+Server:  ATDC1.cchs.com
+Address:  10.7.254.101
+
+Name:    google.com
+Addresses:  2607:f8b0:4002:c00::64
+          2607:f8b0:4002:c00::8b
+          2607:f8b0:4002:c00::71
+          2607:f8b0:4002:c00::65
+          108.177.122.113
+          108.177.122.101
+          108.177.122.100
+          108.177.122.102
+          108.177.122.138
+          108.177.122.139
+
+
+al10991@ALIPL3082 MINGW64 ~
+$ nslookup https://funny-gumdrop-dfc15a.netlify.app/
+*** atdc1.cchs.com can't find https://funny-gumdrop-dfc15a.netlify.app/: Non-existent domain
+Server:  atdc1.cchs.com
+Address:  10.7.254.101
+
+
+al10991@ALIPL3082 MINGW64 ~
+$ ping 10.7.254.101
+
+Pinging 10.7.254.101 with 32 bytes of data:
+Reply from 10.7.254.101: bytes=32 time=289ms TTL=127
+Reply from 10.7.254.101: bytes=32 time=283ms TTL=127
+
+Ping statistics for 10.7.254.101:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 283ms, Maximum = 289ms, Average = 286ms
+Control-C
+
+al10991@ALIPL3082 MINGW64 ~
+
+
+Git commands: 
+--------------
+
+Github to local working copy ---> git clone https://github....jspractice.git   ---> for private branch create personal access token or ssh key and add in front of github url
+
+cd jspractice   ---> change directory into the local working copy dir that came from the github
+
+git branch -b   ---> check which branch you are in.
+
+git checkout <branchname>    ----> switch to the branch you need
+
+git checkout -b <branchname>    ---> create new branch using this command if needed
+
+Then do the changes in files you need to add new files as per your project
+
+git status    ---> check the status of changes
+
+git add .    ----> to add the modified/new files into tracking by git.
+
+git commit -am "message"  ----> to finalise and add a commit message to all the changes.
+
+git push -u origin <branchtopush>   ---> git push into github...remembr to give the branch that will be pushed to github
+
+
+
+
+Git Practice
+-------------
+
+
+$ ls -ltr
+total 4
+drwxr-xr-x 1 al10991 1049089 0 Oct  8 17:13 jspractice/
+drwxr-xr-x 1 al10991 1049089 0 Oct 10 23:00 test1/
+
+al10991@ALIPL3082 MINGW64 ~/mern
+$ cd jspractice/
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ ls -ltr
+total 10
+-rw-r--r-- 1 al10991 1049089   12 Oct  6 15:00 README.md
+-rw-r--r-- 1 al10991 1049089  471 Oct  9 00:09 index.html
+-rw-r--r-- 1 al10991 1049089 1320 Oct  9 00:44 op.html
+-rwxr-xr-x 1 al10991 1049089  421 Oct 10 15:10 work.js*
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        op.html
+        work.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git add .
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   op.html
+        new file:   work.js
+
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ vi index.html
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   op.html
+        new file:   work.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git add .
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   op.html
+        new file:   work.js
+
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git commit -am "finalised changes in index.html and added two other files"
+[main 7776601] finalised changes in index.html and added two other files
+ Committer: Ramprasad Peesa <al10991@accionlabs.in>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 85 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 op.html
+ create mode 100644 work.js
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.39 KiB | 711.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Sameedu/jspractice.git
+   9742805..7776601  main -> main
+branch 'main' set up to track 'origin/main'.
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git pull
+From https://github.com/Sameedu/jspractice
+ * [new branch]      dev        -> origin/dev
+ * [new branch]      hotfix     -> origin/hotfix
+ * [new branch]      production -> origin/production
+ * [new branch]      release    -> origin/release
+Already up to date.
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/dev
+  remotes/origin/hotfix
+  remotes/origin/main
+  remotes/origin/production
+  remotes/origin/release
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git checkout dev
+Switched to a new branch 'dev'
+branch 'dev' set up to track 'origin/dev'.
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (dev)
+$ git branch -a
+* dev
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/dev
+  remotes/origin/hotfix
+  remotes/origin/main
+  remotes/origin/production
+  remotes/origin/release
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (dev)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git branch -a
+  dev
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/dev
+  remotes/origin/hotfix
+  remotes/origin/main
+  remotes/origin/production
+  remotes/origin/release
+
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (main)
+$ git checkout -b samee
+Switched to a new branch 'samee'
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (samee)
+$ git push -u origin samee
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'samee' on GitHub by visiting:
+remote:      https://github.com/Sameedu/jspractice/pull/new/samee
+remote:
+To https://github.com/Sameedu/jspractice.git
+ * [new branch]      samee -> samee
+branch 'samee' set up to track 'origin/samee'.
+
+al10991@ALIPL3082 MINGW64 ~/mern/jspractice (samee)
+
+
+Assignment DOM ---> dom methdology docuemnt.getelement.innerhtml
+Guvi B32 WD day9 assignment ---> API request Xmlhttprequest 
+
+
+
+accel-case-mgmt-ms
+
+claimsqueue
+
+
+
+
+

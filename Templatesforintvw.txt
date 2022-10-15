@@ -1,0 +1,177 @@
+Array ip o/p template
+=======================
+
+input: 12,19,17
+
+index.html
+---------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="op.html" method="GET">
+    <label for="ip_arr">Enter the array:</label><br>
+    <input type="text" id="ip_arr" name="ip_arr"><br>
+
+
+    <input type="submit">
+    </form>
+
+    
+</body>
+</html>
+
+
+op.html
+------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The prime numbers in the below range are:</p>
+    <p id="sam"></p>
+
+    <p>Result:</p>
+    <p id="op"></p>
+
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+
+        const urlParams = new URLSearchParams(queryString);
+        console.log(urlParams.get('ip_arr'))
+
+        var arr1=urlParams.get('ip_arr')
+        arr=arr1.split(",")
+        
+        temp_op=[]  
+          for (i=0; i<arr.length; i++){
+            count=0
+            for (j=2; j<arr[i]; j++){ 
+          
+              if ((arr[i]%j) == 0)
+                {
+                  break
+                }
+              else
+                {
+                  console.log(arr[i])
+                  count = count+1
+                }
+            }
+          if ((count)/(arr[i]-2) == 1)
+          temp_op.push(arr[i])
+          }
+
+        console.log(temp_op)
+
+        document.getElementById("op").innerHTML = temp_op;
+        document.getElementById("sam").innerHTML = arr;
+    </script>
+
+</body>
+</html>
+
+
+Range or text i/p o/p template
+================================
+
+index.html
+----------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="op.html" method="GET">
+    <label for="low_range">Lower Range of prime value:</label><br>
+    <input type="text" id="low_range" name="low_range"><br>
+
+    <label for="high_range">Higher Range of prime value:</label><br>
+    <input type="text" id="high_range" name="high_range"><br><br>
+    
+
+    <input type="submit">
+    </form>
+
+    
+</body>
+</html>
+
+
+op.html
+--------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The even values in the below range are:</p>
+    <p id="sam"></p>
+
+    <p>Result:</p>
+    <p id="op">        </p>
+
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+
+        const urlParams = new URLSearchParams(queryString);
+        console.log(urlParams.get('low_range'))
+        console.log(urlParams.get('high_range'))
+        console.log(urlParams.get('Size'))
+
+        var low=urlParams.get('low_range')
+        var high=urlParams.get('high_range')
+
+        
+temp_op=[]
+for (i=low; i<=high; i++){
+  count=0
+  for (j=2; j<=i-1; j++) 
+  { 
+    if ((i%j) == 0)
+      {
+        break
+      }
+    else
+      {
+      count = count+1
+    }
+
+}
+if ((count)/(i-2) == 1)
+  temp_op.push(i)
+
+}
+
+console.log(temp_op)
+
+        document.getElementById("op").innerHTML = op;
+        document.getElementById("sam").innerHTML = `${low} to ${high}`
+    </script>
+
+</body>
+</html>
