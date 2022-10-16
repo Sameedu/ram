@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The prime numbers in the below range are:</p>
+    <p id="sam"></p>
+
+    <p>Result:</p>
+    <p id="op"></p>
+
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+
+        const urlParams = new URLSearchParams(queryString);
+        console.log(urlParams.get('ip_arr'))
+
+        var arr1=urlParams.get('ip_arr')
+        arr=arr1.split(",")
+        
+        
+        var findprime = (a) => {
+            temp_op =[]
+            for(i=0;i<arr.length;i++)
+            {
+                for(j=2;j<a[i];j++)
+                {
+                var c=0
+                 if((arr[i]%j) == 0)
+                    {
+                    break
+                    }
+                else
+                    {
+                    c=c+1
+                    }
+                }
+             if(c>0)
+                {
+                temp_op.push(a[i])
+                }
+             }
+            return temp_op
+        }
+
+        document.getElementById("op").innerHTML = findprime(arr);
+        document.getElementById("sam").innerHTML = arr;
+    </script>
+
+</body>
+</html>
